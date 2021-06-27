@@ -21,7 +21,7 @@
         "mail":"g.m.leine@gmail.com",
         "url":"https://glynleine.com"
     },    
-  "category": "Utilities"
+  "category": "Utilities",
   "repository": {
     "url": "https://github.com/GlynLeine/SimplifiedCustomShaders.git#main",
     "type": "git",
