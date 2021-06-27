@@ -24,6 +24,6 @@
   "category": "Utilities",
   "repository": {
     "url": "https://www.github.com/GlynLeine/SimplifiedCustomShaders.git#main",
-    "type": "git",
+    "type": "git"
   }
 }
