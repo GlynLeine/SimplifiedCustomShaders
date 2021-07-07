@@ -1,6 +1,8 @@
 {
     "name": "GlynLeine.Simplified_Shaders.Editor",
-    "references": [],
+    "references": [
+		"Unity.InputSystem"
+	],
     "includePlatforms": [
         "Editor"
     ],

@@ -8,6 +8,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+#if ENABLE_INPUT_SYSTEM
+using UnityEngine.InputSystem;
+#endif
+
 public class ShaderBuilder : EditorWindow
 {
     [MenuItem("Assets/Create/Shader/Simplified Custom Shader", false, 1)]
@@ -36,7 +40,11 @@ public class ShaderBuilder : EditorWindow
 
         shaderName = EditorGUILayout.TextField("Shader Name", shaderName);
 
-        if (Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.Return) || Input.GetKeyUp(KeyCode.KeypadEnter)) // Make work with new input system
+#if ENABLE_INPUT_SYSTEM
+        if (Mouse.current.leftButton.wasReleasedThisFrame || Keyboard.current.enterKey.wasReleasedThisFrame || Keyboard.current.numpadEnterKey.wasReleasedThisFrame)
+#else
+        if (Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.Return) || Input.GetKeyUp(KeyCode.KeypadEnter))
+#endif
         {
             int kbdCtrlId  = GUIUtility.keyboardControl;
             if (kbdCtrlId != lastKeyboardControl)
