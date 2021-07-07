@@ -31,11 +31,11 @@ void FragmentProgram(FragInputs input, float3 viewdir, inout PositionInputs posI
     // Fragment shader.
 }
 
-#include "Assets/Simplified Custom Shaders/Base/HDRP/Vertex.hlsl"
-#include "Assets/Simplified Custom Shaders/Base/HDRP/Tessellation.hlsl"
+#include "Packages/com.glynleine.simplified_shaders/Runtime/HDRP/Vertex.hlsl"
+#include "Packages/com.glynleine.simplified_shaders/Runtime/HDRP/Tessellation.hlsl"
 
 #if (SHADERPASS == SHADERPASS_FORWARD)
-#include "Assets/Simplified Custom Shaders/Base/HDRP/FragmentForward.hlsl"
+#include "Packages/com.glynleine.simplified_shaders/Runtime/HDRP/FragmentForward.hlsl"
 #else
-#include "Assets/Simplified Custom Shaders/Base/HDRP/Fragment.hlsl"
+#include "Packages/com.glynleine.simplified_shaders/Runtime/HDRP/Fragment.hlsl"
 #endif

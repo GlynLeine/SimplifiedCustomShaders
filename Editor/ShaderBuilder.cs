@@ -66,8 +66,8 @@ public class ShaderBuilder : EditorWindow
             switch (targetPipeline)
             {
                 case TargetPipeline.HDRP:
-                    ProjectWindowUtil.CreateScriptAssetFromTemplateFile("Assets/Simplified Custom Shaders/Base/HDRP/CustomProgram.template", shaderName + " Program.shaderprogram");
-                    ProjectWindowUtil.CreateScriptAssetFromTemplateFile("Assets/Simplified Custom Shaders/Base/HDRP/CustomShader.template", shaderName + ".shader");
+                    ProjectWindowUtil.CreateScriptAssetFromTemplateFile("Packages/com.glynleine.simplified_shaders/Runtime/HDRP/CustomProgram.template", shaderName + " Program.shaderprogram");
+                    ProjectWindowUtil.CreateScriptAssetFromTemplateFile("Packages/com.glynleine.simplified_shaders/Runtime/HDRP/CustomShader.template", shaderName + ".shader");
                     break;
                 case TargetPipeline.URP:
                     Debug.LogError("[SCS] Pipeline not supported yet.");
