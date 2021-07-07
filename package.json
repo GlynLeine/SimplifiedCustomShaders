@@ -4,24 +4,27 @@
   "version": "0.1.0-preview",
   "unity": "2020.3",
   "description": "Tool for creating custom HDRP shader more easily. The shaders are pre-generated simplified shaderprograms",
+  "category": "Utilities",
+  "type": "tool",
+  "license": "MIT",
+  "author" : {
+        "name":"Glyn Leine",
+        "mail":"g.m.leine@gmail.com",
+        "url":"https://glynleine.com"
+    },
+  "dependencies":{  }, 
+  "relatedPackages":{  },    
   "keywords": [
-    "unity",
+    "Unity",
 	"HDRP",
 	"custom",
 	"simplified",
     "shaders",
     "api",
     "package",
-    "anything"
+    "Glyn",
+	"Leine"
   ],
-  "dependencies":{  }, 
-  "relatedPackages":{  }, 
-  "author" : {
-        "name":"Glyn Leine",
-        "mail":"g.m.leine@gmail.com",
-        "url":"https://glynleine.com"
-    },    
-  "category": "Utilities",
   "repository": {
     "url": "https://www.github.com/GlynLeine/SimplifiedCustomShaders.git#main",
     "type": "git"
